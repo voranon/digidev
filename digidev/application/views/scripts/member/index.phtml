@@ -1,0 +1,204 @@
+<style type="text/css">
+
+body {
+
+     background-attachment: fixed;
+
+     background-clip: border-box;
+
+     background-color: transparent;
+
+     background-image: url("/images/swbg.jpg");
+
+     background-origin: padding-box;
+
+     background-position: center center;
+
+     background-repeat: no-repeat;
+
+     background-size: cover;
+
+}
+
+</style>
+
+
+<header>
+<div class="clear"></div>
+</header>
+
+<div class="header_filter">
+
+
+
+        <div class="filter_block">
+
+            <div class="filter_navigation" >
+
+                <ul class="splitter" id="options">
+
+                    <li>
+
+                        <ul class="optionset" data-option-key="filter">
+
+                            <?php
+                            foreach( $this->channels as $channel_group){
+							?>
+
+							<li><a href="#filter" data-option-value=".<?php echo $channel_group->channel_id?>"><?php echo $channel_group->description?></a></li>
+
+                            <li class="sep">:</li>
+
+
+							<?php
+                            }
+                            ?>
+
+						</ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div><!-- .filter_block -->
+
+    </div><!-- .header_filter -->
+
+    <!-- C O N T E N T -->
+
+    <div class="content_wrapper">
+
+		<div class="gallery_block">
+
+            <div class="portfolio_block image-grid columns-grid" id="list">
+
+            <?php
+                  foreach( $this->channels as $channel_group){
+
+						$medias = $this->cdn->get_medias($channel_group->channel_id);
+						foreach($medias->media_list as $media)
+						{
+							$image = $media->thumbnails;
+
+				?>
+
+                <div data-category="features" class="<?php echo $channel_group->channel_id?> element">
+
+                	<div class="filter_img">
+
+                        <img src="<?php echo $image[1]->url?>" alt="" >
+
+                        <div class="portfolio_wrapper"></div>
+
+                        <div class="portfolio_content">
+
+                            <h5><?php echo $media->title?></h5>
+
+                            <p><?php echo $media->description?></p>
+
+                            <span class="ico_block">
+
+                                <a rel="lightbox" href="http://link.videoplatform.limelight.com/media/?mediaId=<?php echo $media->media_id?>&width=100%&height=100%&autoplay=false&playerForm=166533d123894704b7e591b7b91da390&autoplay=true" class="ico_zoom" title="Watch Now!"><span></span></a>
+
+                            </span>
+
+                        </div>
+
+                        <span class="post_type post_type_video"></span>
+
+                    </div>
+
+                </div>
+
+                <?php
+
+						}
+
+				  }
+			  ?>
+
+			  </div><!-- .portfolio_block -->
+
+            <div class="clear"><!-- ClearFix --></div>
+
+
+
+			<script type="text/javascript" src="/js/grid_portfolio.js"></script>
+
+        </div>
+
+    </div>
+
+ <hr class="light">
+
+
+<div id="sb-container" style="display: none; height: 424px; width: 1302px; visibility: hidden;">
+
+<div id="sb-overlay" style="background-color: rgb(0, 0, 0); opacity: 0;"></div>
+
+<div id="sb-wrapper" style="top: 20px; left: 134px; width: 1034px; visibility: hidden;">
+
+<div id="sb-title">
+
+<div id="sb-title-inner" style="margin-top: 26px;"></div>
+
+</div>
+
+<div id="sb-wrapper-inner" style="height: 336px;">
+
+<div id="sb-body">
+
+<div id="sb-body-inner"></div>
+
+<div id="sb-loading" style="display: none;">
+
+<div id="sb-loading-inner">
+
+<span>loading</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="sb-info">
+
+<div id="sb-info-inner" style="margin-top: 0px;">
+
+<div id="sb-counter"></div>
+
+<div id="sb-nav">
+
+<a id="sb-nav-close" onclick="Shadowbox.close()" title="Close"></a>
+
+<a id="sb-nav-next" onclick="Shadowbox.next()" title="Next" style="display: none;"></a>
+
+<a id="sb-nav-play" onclick="Shadowbox.play()" title="Play" style="display: none;"></a>
+
+<a id="sb-nav-pause" onclick="Shadowbox.pause()" title="Pause" style="display: none;"></a>
+
+<a id="sb-nav-previous" onclick="Shadowbox.previous()" title="Previous" style="display: none;"></a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+	var showall = '.<?php echo $this->channels[0]->channel_id?>';
+	$('#list').isotope({filter:showall});
+
+});
+</script>
+

@@ -1,0 +1,195 @@
+<?php
+echo $this->doctype();
+echo $this->headLink();
+echo $this->headTitle();
+echo $this->headScript();
+
+?>
+
+<style type="text/css">
+
+.a-btn{
+    background:#870000;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#ff0000,0),color-stop(#870000,1));
+    background:-webkit-linear-gradient(top, #ff0000 0%, #870000 100%);
+    background:-moz-linear-gradient(top, #ff0000 0%, #870000 100%);
+    background:-o-linear-gradient(top, #ff0000 0%, #870000 100%);
+    background:linear-gradient(top, #ff0000 0%, #870000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#870000',GradientType=0 );
+    border:1px solid #680000;
+    border-color:#680000 #e51e1e #d62121;
+    -webkit-box-shadow:0 1px 1px #7f7f7f, inset 0 1px 0 #ff0000;
+    -moz-box-shadow:0 1px 1px #7f7f7f, inset 0 1px 0 #ff0000;
+    box-shadow:0 1px 1px #7f7f7f, inset 0 1px 0 #ff0000;
+    padding:0px 80px 0px 10px;
+    height:38px;
+    display:inline-block;
+    position:relative;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    float:left;
+    margin:10px;
+    overflow:hidden;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.a-btn-text{
+    padding-top:9px;
+    display:block;
+    font-size:18px;
+    white-space:nowrap;
+    font-family: 'Myriad Pro', sans-serif;
+    color:#ffffff;
+    text-shadow:0 1px 0 #3b3b3b;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.a-btn-slide-text{
+    position:absolute;
+    top:35px;
+    left:0px;
+    width:auto;
+    right:52px;
+    height:0px;
+    background:#fff;
+    color:#000000;
+    font-size:13px;
+    white-space:nowrap;
+    font-family: 'Myriad Pro', sans-serif;
+    font-style:none;
+    text-indent:5px;
+    overflow:hidden;
+    line-height:30px;
+    -webkit-box-shadow:-1px 0px 1px rgba(127,127,127,0.4), 1px 1px 1px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow:-1px 0px 1px rgba(127,127,127,0.4), 1px 1px 1px rgba(0,0,0,0.5) inset;
+    box-shadow:-1px 0px 1px rgba(127,127,127,0.4), 1px 1px 1px rgba(0,0,0,0.5) inset;
+    -webkit-transition:height 0.3s linear;
+    -moz-transition:height 0.3s linear;
+    -o-transition:height 0.3s linear;
+    transition:height 0.3s linear;
+}
+.a-btn-icon-right{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:52px;
+    border-left:1px solid #680000;
+    -webkit-box-shadow:1px 0px 1px rgba(127,127,127,0.4) inset;
+    -moz-box-shadow:1px 0px 1px rgba(127,127,127,0.4) inset;
+    box-shadow:1px 0px 1px rgba(127,127,127,0.4) inset;
+}
+.a-btn-icon-right span{
+    width:38px;
+    height:38px;
+    opacity:0.7;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-20px 0px 0px -20px;
+    background:transparent url(/images/arrow_right.png) no-repeat 50% 55%;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.a-btn:hover{
+    height:65px;
+    -webkit-box-shadow:0px 1px 1px rgba(127,127,127,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow:0px 1px 1px rgba(127,127,127,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+    box-shadow:0px 1px 1px rgba(127,127,127,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+}
+.a-btn:hover .a-btn-text{
+    text-shadow:0px 1px 1px rgba(0,0,0,0.2);
+    color:#fff;
+}
+.a-btn:hover .a-btn-slide-text{
+    height:30px;
+}
+.a-btn:hover .a-btn-icon-right span{
+    opacity:1;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+.a-btn:active{
+    position:relative;
+    top:1px;
+    background:#a50000;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#a50000,0),color-stop(#7e0000,1));
+    background:-webkit-linear-gradient(top, #a50000 0%, #7e0000 100%);
+    background:-moz-linear-gradient(top, #a50000 0%, #7e0000 100%);
+    background:-o-linear-gradient(top, #a50000 0%, #7e0000 100%);
+    background:linear-gradient(top, #a50000 0%, #7e0000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#a50000', endColorstr='#7e0000',GradientType=0 );
+    border-color:#820101 #cd1f1f #c83333;
+    text-shadow:0 1px 0 #fee1a0;
+    -webkit-box-shadow:0 1px 1px #3b3b3b, inset 0 1px 0 #fed17e;
+    -moz-box-shadow:0 1px 1px #3b3b3b, inset 0 1px 0 #fed17e;
+    box-shadow:0 1px 1px #3b3b3b, inset 0 1px 0 #fed17e;
+}
+
+body,td,th,p {
+	font-family: 'Myriad Pro', sans-serif;
+     font-size:13px;
+     color:#FFFFFF;
+}
+a {
+	color:#bebebe;
+	text-decoration:none;
+}
+a:hover { text-decoration:underline;}
+
+</style>
+
+<script type="text/javascript">
+
+</script>
+
+
+<body style="margin:0;" onLoad="MM_preloadImages('/images/btn_r1_c1_s2.png','/images/btn_r1_c3_s2.png')">
+<div style="float:left; position: relative; width: 100%; min-height: 90px; overflow: hidden; padding-left: 10px; padding-top: 10px; background-color: #000000; background: linear-gradient(to bottom, #1B1E20, #090909 100%) repeat scroll 0 0 transparent; border-color: #000000; border-style: solid; border-width: 1px; margin: 0 auto -40px;">
+<a href="/"><img src="/images/logo.png" height="79"></a></div>
+
+<div style='width: 100%; min-height: 800px;'>
+
+  <?php echo $this->layout()->content ?>
+</div>
+
+<div style='width: 100%; background-color: #000000; font-family: Myriad Pro; font-size:12px; background: linear-gradient(to bottom, #1B1E20, #090909 100%) repeat scroll 0 0 transparent; border-color: #000000; border-style: solid; border-width: 1px; box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); position:fixed; bottom:0;'>
+	<table style='margin-left:auto;margin-right:auto;position:relative; top:15px; text-decoration:none; cursor:pointer;width:550px'>
+		<tr>
+			<td width="48" height="40"><a href="http://www.digidev.tv/"><font color='#ffffff'>HOME</font></a></td>
+			<!-- <td width="101"><a href="/index/disclaimer"><font color='#ffffff'>DISCLAIMER</font></a></td> -->
+			<td width="101"><a href="http://www.digidev.tv/terms.html"><font color='#ffffff'>DISCLAIMER</font></a></td>
+			<!-- <td width="139"><a href="/index/privacypolicy"><font color='#ffffff'>PRIVACY POLICY</font></a></td> -->
+			<td width="139"><a href="http://www.digidev.tv/privacy-policy.html"><font color='#ffffff'>PRIVACY POLICY</font></a></td>
+			<td width="142"><a href="http://www.digidev.com"><font color='#ffffff'>CORPORATE SITE</font></a></td>
+			<td width="159"><a href="mailto:info@digidev.com"><font color='#ffffff'>CONTACT US</font></a></td>
+		</tr>
+  </table>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33187379-2']);
+  _gaq.push(['_setDomainName', 'digidev.tv']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,127 @@
+<?php
+echo $this->doctype();
+echo $this->headLink();
+echo $this->headTitle();
+echo $this->headScript();
+
+?>
+
+<link rel="stylesheet" type="text/css" href="/css/DigiDev.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+
+
+<link rel="stylesheet" type="text/css" href="/css/colors.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/base.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/base_responsive.css"></link>
+
+
+<!-- Fonts&Plugins -->
+
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css" /></link>
+<link rel="stylesheet" href="/css/lightbox.css" type="text/css" media="screen" /></link>
+<link rel="stylesheet" type="text/css" href="/css/tipsy.css" /></link>
+<link rel="stylesheet" type="text/css" href="/css/portfolio_isotope.css" /></link>
+<link rel="stylesheet" href="/css/camera.css"></link>
+
+
+
+    <!-- Scripts     -->
+
+
+
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="/js/moo.fx.js"></script>
+<script type="text/javascript" src="/js/litebox-1.0.js"></script>
+<script type="text/javascript" src="/js/hoverIntent.js"></script>
+<script type="text/javascript" src="/js/superfish.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="/js/sorting.js"></script>
+<script type='text/javascript' src='/js/camera.min.js'></script>
+<script type="text/javascript" src="/js/jflickrfeed.js"></script>
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" src="/js/fakeElement-grid.js"></script>
+<script type="text/javascript" src="/js/jquery.carousel.min.js" ></script>
+<script type="text/javascript" src="/js/jquery.jplayer.min.js" ></script>
+<script type="text/javascript" src="/js/jquery.masonry.min.js" ></script>
+<!-- Main Scrip Run -->
+<script type="text/javascript" src="/js/script.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/shadowbox.css"></link>
+<script type="text/javascript" src="/js/shadowbox.js"></script>
+
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50d3f4c72fdee6d5"></script>
+
+<body>
+
+<img src="/images/my_preloader2.gif" id="preloader"></img>
+
+<div style="float:left; display:block; position: relative; width: 100%; min-height: 100px; overflow: hidden; padding-top: 10px; background-color: #000000; background: linear-gradient(to bottom, #1B1E20, #090909 100%) repeat scroll 0 0 transparent; border-color: #000000; border-style: solid; border-width: 1px; margin: 0 auto -40px;">
+  <a href="/member/index"><img src="/images/logo.png" height="57" style="float:left;"></img></a>
+  <div style='float:right;width:500px;overflow:hidden; white-space: nowrap;'>
+    <div style='float: right; min-height: 10px; overflow: auto; padding-right: 3px; position: relative; padding-right: 20px; padding-bottom: 20px ; color: #FFF;'>
+      <table style="display: inline-table;width:375px">
+
+        <tr>
+          <td>
+          	  <a href='<?php echo $this->setting_page?>/?bypass=1&username=<?php echo $this->username?>&password=<?php echo $this->password?>'>
+          	  <img name="AcctSet_Btn_r1_c1" src="/images/AcctSet_Btn_r1_c1.png" id="AcctSet_Btn_r1_c1" alt="" /></img>
+          	  </a>
+          </td>
+          <td>
+          	  <a href="/index/signout">
+          	  <img name="AcctSet_Btn_r1_c2" src="/images/AcctSet_Btn_r1_c2.png" id="AcctSet_Btn_r1_c2" alt="" /></img>
+          	  </a>
+          </td>
+        </tr>
+        <tr>
+        	<td colspan='2'>
+        		<div style="float:right">
+		        <div class="share_block">
+			        <div class="addthis_toolbox addthis_default_style ">
+						<a class="addthis_button_facebook"></a>
+						<a class="addthis_button_twitter"></a>
+						<a class="addthis_button_pinterest_share"></a>
+						<a class="addthis_button_email"></a>
+						<a class="addthis_button_compact"></a>
+					</div>
+			    </div>
+				</div>
+			</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div style='width: 100%; height: 100%;'>
+
+  <?php echo $this->layout()->content?>
+
+</div>
+
+<div style='width: 100%; font-family: Myriad Pro; font-size: 12px; background-color: #000000; background: linear-gradient(to bottom, #1B1E20, #090909 100%) repeat scroll 0 0 transparent; border-color: #000000; border-style: solid; border-width: 1px; box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); position:fixed; bottom:0;z-index:100;'>
+  <table style='margin-left:auto;margin-right:auto;top:5px; text-decoration:none; cursor:pointer;width:550px'>
+    <tr>
+      <td width="48" height="40"><a href='<?php echo $this->setting_page?>/?bypass=1&username=<?php echo $this->username?>&password=<?php echo $this->password?>'><font color='#ffffff'>HOME</font></a></td>
+      <!-- <td width="101"><a href="/index/disclaimer"><font color='#ffffff'>DISCLAIMER</font></a></td> -->
+	  <td width="101"><a href="http://www.digidev.tv/terms.html"><font color='#ffffff'>DISCLAIMER</font></a></td>
+	  <!-- <td width="139"><a href="/index/privacypolicy"><font color='#ffffff'>PRIVACY POLICY</font></a></td> -->
+	  <td width="139"><a href="http://www.digidev.tv/privacy-policy.html"><font color='#ffffff'>PRIVACY POLICY</font></a></td>
+      <td width="142"><a href="http://www.digidev.com"><font color='#ffffff'>CORPORATE SITE</font></a></td>
+      <td width="159"><a href="mailto:info@digidev.com"><font color='#ffffff'>CONTACT US</font></a></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

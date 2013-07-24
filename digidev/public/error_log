@@ -1,0 +1,44 @@
+[04-Nov-2012 19:35:51 UTC] PHP Warning:  require_once(Zend/Application.php): failed to open stream: No such file or directory in /home/vidspit/public_html/watch/zf1/public/index.php on line 18
+[04-Nov-2012 19:35:51 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Application.php' (include_path='/home/vidspit/public_html/watch/zf1/library:.:/usr/lib/php:/usr/local/lib/php') in /home/vidspit/public_html/watch/zf1/public/index.php on line 18
+[04-Nov-2012 20:39:58 UTC] PHP Warning:  require_once(Zend/Application.php): failed to open stream: No such file or directory in /home/vidspit/public_html/watch/zf1/public/index.php on line 18
+[04-Nov-2012 20:39:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Application.php' (include_path='/home/vidspit/public_html/watch/zf1/library:.:/usr/lib/php:/usr/local/lib/php') in /home/vidspit/public_html/watch/zf1/public/index.php on line 18
+[05-Nov-2012 09:08:51 UTC] PHP Fatal error:  Uncaught exception 'Zend_Application_Bootstrap_Exception' with message 'Circular resource dependency detected' in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php:662
+Stack trace:
+#0 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#1 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#2 /home/vidspit/public_html/watch/zf1/application/Bootstrap.php(7): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap()
+#3 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initDoctype()
+#4 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#5 /home/vidspit/public_html in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php on line 662
+[05-Nov-2012 09:08:59 UTC] PHP Fatal error:  Uncaught exception 'Zend_Application_Bootstrap_Exception' with message 'Circular resource dependency detected' in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php:662
+Stack trace:
+#0 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#1 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#2 /home/vidspit/public_html/watch/zf1/application/Bootstrap.php(7): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap()
+#3 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initDoctype()
+#4 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#5 /home/vidspit/public_html in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php on line 662
+[05-Nov-2012 09:09:41 UTC] PHP Fatal error:  Uncaught exception 'Zend_Application_Bootstrap_Exception' with message 'Circular resource dependency detected' in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php:662
+Stack trace:
+#0 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#1 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#2 /home/vidspit/public_html/watch/zf1/application/Bootstrap.php(8): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap()
+#3 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initDoctype()
+#4 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#5 /home/vidspit/public_html in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php on line 662
+[05-Nov-2012 09:09:43 UTC] PHP Fatal error:  Uncaught exception 'Zend_Application_Bootstrap_Exception' with message 'Circular resource dependency detected' in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php:662
+Stack trace:
+#0 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#1 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#2 /home/vidspit/public_html/watch/zf1/application/Bootstrap.php(8): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap()
+#3 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initDoctype()
+#4 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#5 /home/vidspit/public_html in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php on line 662
+[05-Nov-2012 09:09:46 UTC] PHP Fatal error:  Uncaught exception 'Zend_Application_Bootstrap_Exception' with message 'Circular resource dependency detected' in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php:662
+Stack trace:
+#0 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#1 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#2 /home/vidspit/public_html/watch/zf1/application/Bootstrap.php(8): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap()
+#3 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initDoctype()
+#4 /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('doctype')
+#5 /home/vidspit/public_html in /home/vidspit/public_html/watch/zf1/library/Zend/Application/Bootstrap/BootstrapAbstract.php on line 662
